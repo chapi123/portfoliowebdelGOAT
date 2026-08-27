@@ -21,3 +21,127 @@
     width: 45px;
     height: 45px;
 }
+
+body {
+    margin: 0;
+    background-color: #121212;
+    font-family: Arial, sans-serif;
+}
+
+.main-header {
+    height: 75px;
+    background-color: #121212;
+    border-bottom: 1px solid #5c0120;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.header-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: 0.2s;
+}
+
+.logo span {
+    color: #800020;
+}
+
+.logo::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #ee7674;
+    transition: width 0.25s ease;
+}
+
+.logo:hover::after {
+    width: 100%;
+}
+
+.projects-btn {
+    position: relative;
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    padding: 10px 18px;
+    font-size: 15px;
+    transition: color 0.25s ease, background-color 0.25s ease;
+}
+
+.projects-btn::before {
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 18px;
+    width: 0;
+    height: 3px;
+    background-color: #ee7674;
+    transition: width 0.25s ease;
+}
+
+.projects-btn:not(.show):hover::before {
+    width: calc(100% - 36px);
+}
+
+.projects-btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.projects-btn.show {
+    background-color: #800020;
+    color: #ffffff;
+    border-radius: 8px;
+}
+
+.dropdown-menu {
+    background-color: #121212;
+    border: 1px solid #5c0120;
+    border-radius: 10px;
+    padding: 8px;
+    margin-top: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown-item {
+    position: relative;
+    color: #ffffff;
+    padding: 10px 14px;
+    background-color: transparent;
+    transition: color 0.25s ease;
+}
+
+.dropdown-item::after {
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    left: 14px;
+    width: 0;
+    height: 3px;
+    background-color: #ee7674;
+    transition: width 0.25s ease;
+}
+
+.dropdown-item:hover {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+.dropdown-item:hover::after {
+    width: calc(100% - 28px);
+}
