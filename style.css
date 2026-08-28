@@ -30,7 +30,7 @@ body {
 
 .main-header {
     height: 75px;
-    background-color: #121212;
+    background-color: black;
     border-bottom: 1px solid #5c0120;
     display: flex;
     align-items: center;
@@ -110,7 +110,7 @@ body {
 }
 
 .dropdown-menu {
-    background-color: #121212;
+    background-color: black;
     border: 1px solid #5c0120;
     border-radius: 10px;
     padding: 8px;
@@ -144,4 +144,75 @@ body {
 
 .dropdown-item:hover::after {
     width: calc(100% - 28px);
+}
+
+#home {
+    min-height: calc(100vh - 75px);
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+
+.home-content p {
+    color: #ee7674;
+    font-size: 15px;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.description {
+    color: #bdbdbd;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.home-content {
+    max-width: 900px;
+}
+
+.home-content h1 span {
+    color: #5c0120;
+    font-size: 70px;
+    margin: 10px 0 20px;
+}
+
+.home-content h1 {
+    color: white;
+    font-size: 70px;
+    margin: 10px 0 20px;
+}
+
+.circle {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: #5c0120;
+    position: absolute;
+}
+
+.line {
+    height: 500px;
+    width: 8px;
+    background-color: #5c0120;
+    border-radius: 2px;
+    transform: rotate(347deg);
+    position: absolute;
+    overflow: hidden;
+}
+
+.rectangle {
+    height: 400px;
+    width: 200px;
+    border-color: #5c0120;
+    border-width: 8px;
+    border-style: solid;
+    border-radius: 4px;
+    transform: rotate(45deg);
+    position: absolute;
+}
+
+.home-design {
+    display: flex;
+    align-items: center;
 }
