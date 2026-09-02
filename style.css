@@ -3,19 +3,12 @@
     --header-color: rgba(0, 0, 0, 0.92);
     --text-color: #ffffff;
     --secondary-text: #999999;
-
     --accent-color: #800020;
     --accent-light: #ee7674;
     --accent-border: #5c0120;
-
     --border-color: #333333;
     --code-bg: rgba(13, 13, 13, 0.92);
 }
-
-
-/* =========================
-   GENERAL
-========================= */
 
 body {
     margin: 0;
@@ -23,11 +16,6 @@ body {
     color: var(--text-color);
     font-family: "Space Grotesk", sans-serif;
 }
-
-
-/* =========================
-   HEADER
-========================= */
 
 .main-header {
     height: 75px;
@@ -58,9 +46,6 @@ body {
     gap: 10px;
 }
 
-
-/* LOGO */
-
 .logo {
     position: relative;
     color: var(--text-color);
@@ -89,9 +74,6 @@ body {
 .logo:hover::after {
     width: 100%;
 }
-
-
-/* BOTÓN PROYECTOS */
 
 .projects-btn {
     position: relative;
@@ -136,8 +118,6 @@ body {
     border-radius: 8px;
 }
 
-/* DROPDOWN */
-
 .dropdown-menu {
     background-color: var(--header-color);
     border: 1px solid var(--accent-border);
@@ -178,9 +158,6 @@ body {
     width: calc(100% - 28px);
 }
 
-
-/* BOTÓN HOME */
-
 .home-btn {
     position: relative;
     color: var(--text-color);
@@ -204,11 +181,6 @@ body {
 .home-btn:hover::before {
     width: calc(100% - 36px);
 }
-
-
-/* =========================
-   HOME
-========================= */
 
 #home {
     min-height: 100vh;
@@ -305,10 +277,6 @@ body {
     transform: translateX(5px);
 }
 
-/* =========================
-   BOTÓN MODO CLARO / OSCURO
-========================= */
-
 .theme-toggle {
     display: none;
 }
@@ -316,20 +284,15 @@ body {
 .theme-btn {
     width: 42px;
     height: 42px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     border: 1px solid var(--accent-border);
     border-radius: 50%;
-
     background-color: transparent;
     color: var(--text-color);
-
     font-size: 18px;
     cursor: pointer;
-
     transition: 0.25s ease;
 }
 
@@ -338,10 +301,6 @@ body {
     color: #ffffff;
     transform: translateY(-2px);
 }
-
-/* =========================
-   HOME DESIGN
-========================= */
 
 .home-design {
     position: absolute;
@@ -360,14 +319,7 @@ body {
     border-radius: 50%;
     left: 27%;
     top: 22%;
-
-    background: radial-gradient(
-        circle at 40% 40%,
-        var(--accent-color),
-        #3a0015 65%,
-        #18000a
-    );
-
+    background: radial-gradient( circle at 40% 40%, var(--accent-color), #3a0015 65%, #18000a);
     border: 1px solid #8f1635;
     opacity: 0.9;
 }
@@ -389,15 +341,7 @@ body {
     height: 600px;
     left: 45%;
     top: 3%;
-
-    background: linear-gradient(
-        to bottom,
-        transparent,
-        #ee3b55,
-        var(--accent-color),
-        transparent
-    );
-
+    background: linear-gradient( to bottom, transparent, #ee3b55, var(--accent-color), transparent);
     transform: rotate(24deg);
     opacity: 0.9;
     z-index: 3;
@@ -407,12 +351,7 @@ body {
     position: absolute;
     width: 180px;
     height: 180px;
-
-    background-image: radial-gradient(
-        #8f1635 1.5px,
-        transparent 1.5px
-    );
-
+    background-image: radial-gradient( #8f1635 1.5px, transparent 1.5px);
     background-size: 20px 20px;
     opacity: 0.55;
     right: 8%;
@@ -424,36 +363,22 @@ body {
     position: absolute;
     width: 200px;
     height: 200px;
-
-    background-image: radial-gradient(
-        #8f1635 1.5px,
-        transparent 1.5px
-    );
-
+    background-image: radial-gradient( #8f1635 1.5px, transparent 1.5px);
     background-size: 20px 20px;
     left: -500px;
     top: 500px;
     opacity: 0.7;
 }
 
-
-/* =========================
-   CODE CARD
-========================= */
-
 .code-card {
     position: absolute;
     width: 430px;
     right: 5%;
     bottom: 8%;
-
     background: var(--code-bg);
     border: 1px solid var(--accent-border);
     border-radius: 15px;
-
-    box-shadow:
-        0 0 30px rgba(92, 1, 32, 0.25);
-
+    box-shadow: 0 0 30px rgba(92, 1, 32, 0.25);
     overflow: hidden;
     z-index: 5;
 }
@@ -508,11 +433,6 @@ body {
     color: var(--accent-light);
 }
 
-
-/* =========================
-   SCROLL INDICATOR
-========================= */
-
 .scroll-indicator {
     position: absolute;
     left: 10%;
@@ -546,17 +466,11 @@ body {
     letter-spacing: 4px;
 }
 
-
-/* =========================
-   PROJECTS
-========================= */
-
 #projects {
     position: relative;
     min-height: 100vh;
     padding: 120px 10%;
     background-color: var(--bg-color);
-
     animation: fadeUp linear both;
     animation-timeline: view();
     animation-range: entry 0% cover 41%;
@@ -571,8 +485,6 @@ body {
     height: 1px;
     background-color: var(--accent-border);
 }
-
-/* TITULO */
 
 .projects-title {
     display: flex;
@@ -602,9 +514,6 @@ body {
     background-color: var(--accent-border);
 }
 
-
-/* CAROUSEL */
-
 #Carousel {
     width: 100%;
 }
@@ -615,28 +524,26 @@ body {
 
 .project-slide {
     display: grid;
-    grid-template-columns: 62% 38%;
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 0.5fr);
     align-items: center;
     gap: 60px;
 }
 
 .project-image {
-    height: 480px;
+    height: 460px;
     position: relative;
     overflow: hidden;
     border-radius: 14px;
     border: 1px solid var(--border-color);
-    box-shadow: 0 20px 60px rgba(0,0,0,.45);
+    box-shadow: 14px 0 18px -6px rgba(0, 0, 0, .45);
 }
 
-.project-image > img {
+.project-image>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
-
-
-/* GITHUB */
 
 .github-link {
     position: absolute;
@@ -648,10 +555,8 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-
-    background: rgba(0,0,0,.75);
+    background: rgba(0, 0, 0, .75);
     border: 1px solid var(--accent-border);
-
     transition: .25s;
 }
 
@@ -665,11 +570,9 @@ body {
     background: var(--accent-color);
 }
 
-
-/* INFORMACIÓN */
-
 .project-info {
-    padding-right: 20px;
+    padding-right: 0px;
+    min-width: 0px;
 }
 
 .project-number {
@@ -728,24 +631,16 @@ body {
     transform: translateX(6px);
 }
 
-
-/* =========================
-   FLECHAS DEL CAROUSEL
-========================= */
-
 .carousel-control-prev,
 .carousel-control-next {
     width: 55px;
     height: 55px;
     top: 50%;
     transform: translateY(-50%);
-
     opacity: 1;
-
     background-color: var(--bg-color);
     border: 1px solid var(--accent-border);
     border-radius: 50%;
-
     transition: 0.25s ease;
 }
 
@@ -757,59 +652,37 @@ body {
     right: -75px;
 }
 
-
-/* ICONOS */
-
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-image: none !important;
-
     width: 22px;
     height: 22px;
-
     position: relative;
 }
-
-
-/* Flecha izquierda */
 
 .carousel-control-prev-icon::after {
     content: "";
     position: absolute;
-
     width: 10px;
     height: 10px;
-
     border-left: 2px solid var(--text-color);
     border-bottom: 2px solid var(--text-color);
-
     transform: rotate(45deg);
-
     top: 5px;
     left: 7px;
 }
 
-
-/* Flecha derecha */
-
 .carousel-control-next-icon::after {
     content: "";
     position: absolute;
-
     width: 10px;
     height: 10px;
-
     border-right: 2px solid var(--text-color);
     border-top: 2px solid var(--text-color);
-
     transform: rotate(45deg);
-
     top: 5px;
     right: 7px;
 }
-
-
-/* HOVER */
 
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
@@ -817,18 +690,10 @@ body {
     border-color: var(--accent-light);
 }
 
-
-/* Flechas blancas cuando el botón está en hover */
-
 .carousel-control-prev:hover .carousel-control-prev-icon::after,
 .carousel-control-next:hover .carousel-control-next-icon::after {
     border-color: #ffffff;
 }
-
-
-/* =========================
-   INDICADORES
-========================= */
 
 .carousel-indicators {
     bottom: -45px;
@@ -845,11 +710,7 @@ body {
     border-radius: 10px;
     background-color: var(--accent-border);
     opacity: 1;
-
-    transition:
-        width 0.35s ease,
-        background-color 0.35s ease,
-        transform 0.35s ease;
+    transition: width 0.35s ease, background-color 0.35s ease, transform 0.35s ease;
 }
 
 .carousel-indicators .active {
@@ -873,55 +734,34 @@ body {
     background-color: var(--accent-light);
 }
 
-
-/* =========================
-   ANIMACIONES
-========================= */
-
 @keyframes fadeUp {
-
     from {
         opacity: 0;
         transform: translateY(40px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
     }
-
 }
-
-/* =========================
-   MODO CLARO
-========================= */
 
 body:has(#theme-toggle:checked) {
     --bg-color: #f4f4f4;
     --header-color: rgba(255, 255, 255, 0.92);
     --text-color: #121212;
     --secondary-text: #555555;
-
     --accent-color: #800020;
     --accent-light: #a52a45;
     --accent-border: #b8b8b8;
-
     --border-color: #d5d5d5;
     --code-bg: rgba(255, 255, 255, 0.92);
 }
-
-
-/* =========================================================
-   SKILLS (nuevo — reutiliza .projects-title, fadeUp, línea
-   divisoria y variables ya existentes)
-========================================================= */
 
 #skills {
     position: relative;
     min-height: 100vh;
     padding: 120px 10%;
     background-color: var(--bg-color);
-
     animation: fadeUp linear both;
     animation-timeline: view();
     animation-range: entry 0% cover 41%;
@@ -978,20 +818,16 @@ body:has(#theme-toggle:checked) {
     white-space: nowrap;
 }
 
-/* Tarjetas grandes (Python / HTML / CSS): puramente visuales,
-   NO son botones funcionales, sin hover ni transición. */
 .skill-main {
     width: 220px;
     height: 220px;
     display: flex;
     align-items: center;
     justify-content: center;
-
     border: 1px solid var(--accent-border);
     border-radius: 15px;
     background: var(--code-bg);
     box-shadow: 0 0 30px rgba(92, 1, 32, 0.25);
-
     color: var(--text-color);
     font-size: 30px;
     font-weight: 700;
@@ -1012,18 +848,11 @@ body:has(#theme-toggle:checked) {
     font-size: 24px;
 }
 
-
-/* =========================================================
-   CONTACTO (nuevo — reutiliza .projects-title, .home-button,
-   fadeUp y línea divisoria ya existentes)
-========================================================= */
-
 #contact {
     position: relative;
     min-height: 55vh;
     padding: 120px 10%;
     background-color: var(--bg-color);
-
     animation: fadeUp linear both;
     animation-timeline: view();
     animation-range: entry 0% cover 41%;
@@ -1049,56 +878,40 @@ body:has(#theme-toggle:checked) {
     letter-spacing: 3px;
 }
 
-
-/* =========================================================
-   RESPONSIVE (nuevo — no modifica ninguna regla existente,
-   solo la ajusta en pantallas chicas mediante media queries)
-   Breakpoints: 992px (tablet) y 600px (celular)
-========================================================= */
-
 @media (max-width: 992px) {
-
     .main-header {
         padding: 0 4%;
     }
-
     .header-nav {
         gap: 2px;
     }
-
     .home-btn,
     .projects-btn {
         padding: 10px 12px;
         font-size: 14px;
     }
-
     #home {
         flex-direction: column;
         justify-content: center;
         padding: 140px 6% 80px;
         min-height: auto;
     }
-
     .home-content {
         width: 100%;
         max-width: 100%;
     }
-
     .home-content h1 {
         font-size: 48px;
     }
-
     .home-content h1 span {
         font-size: 58px;
     }
-
     .home-design {
         position: relative;
         width: 100%;
         height: 380px;
         margin-top: 60px;
     }
-
     .code-card {
         width: 100%;
         max-width: 100%;
@@ -1106,159 +919,126 @@ body:has(#theme-toggle:checked) {
         left: 0;
         bottom: 0;
     }
-
     .circle,
     .geometric-square,
     .diagonal-line,
     .dot-grid {
         display: none;
     }
-
     .scroll-indicator {
         display: none;
     }
-
     #projects,
     #skills,
     #contact {
         padding: 90px 6%;
     }
-
     .project-slide {
         grid-template-columns: 1fr;
         gap: 35px;
     }
-
     .project-image {
         height: 340px;
     }
-
     .project-info h3 {
         font-size: 36px;
     }
-
     .carousel-control-prev,
     .carousel-control-next {
         width: 42px;
         height: 42px;
     }
-
     .carousel-control-prev {
         left: 10px;
     }
-
     .carousel-control-next {
         right: 10px;
     }
 }
 
 @media (max-width: 600px) {
-
     .logo {
         font-size: 17px;
     }
-
     .header-nav {
         gap: 0;
     }
-
     .home-btn,
     .projects-btn {
         padding: 8px 8px;
         font-size: 12px;
     }
-
     .dropdown-menu {
         min-width: 160px;
     }
-
     .theme-btn {
         width: 36px;
         height: 36px;
         font-size: 15px;
     }
-
     #home {
         padding: 120px 6% 60px;
     }
-
     .home-intro span {
         font-size: 13px;
         letter-spacing: 5px;
     }
-
     .home-content h1 {
         font-size: 34px;
     }
-
     .home-content h1 span {
         font-size: 42px;
     }
-
     .description {
         font-size: 16px;
     }
-
     .home-button {
         width: 100%;
         justify-content: center;
         padding: 14px 20px;
     }
-
     .home-design {
         height: 260px;
     }
-
     .projects-title h2 {
         font-size: 30px;
     }
-
     .projects-title::after {
         width: 40px;
     }
-
     .section-subtitle {
         font-size: 14px;
         margin-bottom: 40px;
     }
-
     .project-image {
         height: 220px;
     }
-
     .project-info h3 {
         font-size: 28px;
     }
-
     .project-description {
         font-size: 15px;
     }
-
     .carousel-indicators {
         bottom: -35px;
     }
-
     .skill-main {
         width: 150px;
         height: 150px;
         font-size: 22px;
     }
-
     .skill-main-small {
         width: 120px;
         height: 120px;
         font-size: 18px;
     }
-
     .skill-chip {
         padding: 8px 16px;
         font-size: 12px;
     }
-
     .contact-content {
         flex-direction: column;
     }
-
     .contact-card {
         width: 100%;
         justify-content: center;
